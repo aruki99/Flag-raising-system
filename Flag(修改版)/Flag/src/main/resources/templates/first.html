@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>城院升旗活动入口</title>
+</head>
+<body>
+
+<style>
+    body{
+        margin: 0px;
+        border: 0px;
+        padding: 0px;
+
+        width: 100vw;
+        height: 100vh;
+    }
+    #rk{
+        z-index: 20;
+        margin: 0px 0px;
+        color: white;
+        text-align: center;
+        line-height: 120px;
+        font-size: 50px;
+        text-decoration: none;
+        border-radius: 63px;
+        width: 320px;
+        height: 125px;
+        background-color: red;
+        position: absolute;
+        top: 58%;
+        left: 34.5%;
+    }
+
+    #bt{
+        z-index: 19;
+        font-weight: 600;
+        margin: 0px 0px;
+        color: red;
+        text-align: center;
+        line-height: 80px;
+        font-size: 80px;
+        text-decoration: none;
+        border-radius: 60px;
+        width: 802px;
+        height: 300px;
+        position: absolute;
+        top: 26%;
+        left: 9%;
+    }
+    #bt2{
+        z-index: 19;
+        font-weight: 600;
+        margin: 0px 0px;
+        color: red;
+        text-align: center;
+        line-height: 60px;
+        text-decoration: none;
+        border-radius: 60px;
+        width: 802px;
+        height: 300px;
+        position: absolute;
+        top: 34%;
+        left: 9%;
+        font-size: 50px;
+    }
+    #bj6{
+        top: 0px;
+        left: 0px;
+        background-size: 100% 100%;
+        height: 100%;
+        position: fixed;
+        width: 100%;
+    }
+
+    #tc{
+        z-index: 99;
+        padding: 0;
+        margin: 0;
+        font-size: 35px;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+
+    }
+    #tip{
+        z-index: 98;
+        font-size: 35px;
+        color: red;
+        position: absolute;
+        top: 0%;
+        right: 16%;
+    }
+
+
+
+</style>
+<!--th:text="${yb_realname}-->
+<div id="tip" th:text="你好，+${yb_realname}"></div>
+<a href="/rise" id="rk" >开始升旗</a>
+<a href="/logout" id="tc">退出登录</a>
+
+<div id="bt">
+    <div id="bt1">东莞理工学院城市学院</div>
+
+</div>
+
+<img src="img/one.jpg" id="bj6" alt="">
+
+<!--<img src="img/cxw1.png" id="cxw1" alt="">-->
+<div id="bt2">
+    <p>线上升旗仪式</p>
+    <p>&nbsp守护国旗，从我做起！</p>
+</div>
+
+
+
+<script>
+    alert("欢迎参加城院线上升旗活动");
+</script>
+
+</body>
+</html>
