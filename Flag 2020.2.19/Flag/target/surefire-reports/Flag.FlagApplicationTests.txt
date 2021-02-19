@@ -1,0 +1,18 @@
+-------------------------------------------------------------------------------
+Test set: Flag.FlagApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 11.564 s <<< FAILURE! - in Flag.FlagApplicationTests
+StudentsTest  Time elapsed: 0.539 s  <<< ERROR!
+org.springframework.dao.DuplicateKeyException: 
+
+### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '123' for key 'students.PRIMARY'
+### The error may exist in Flag/lesson01/students.java (best guess)
+### The error may involve Flag.lesson01.students.addStudents-Inline
+### The error occurred while setting parameters
+### SQL: INSERT INTO students(yiban_id,name,paiWei) VALUES(?,?,?)
+### Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '123' for key 'students.PRIMARY'
+; Duplicate entry '123' for key 'students.PRIMARY'; nested exception is java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '123' for key 'students.PRIMARY'
+	at Flag.FlagApplicationTests.StudentsTest(FlagApplicationTests.java:34)
+Caused by: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '123' for key 'students.PRIMARY'
+	at Flag.FlagApplicationTests.StudentsTest(FlagApplicationTests.java:34)
+
