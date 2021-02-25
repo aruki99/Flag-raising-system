@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>升国旗</title>
+    <style>
+        body {
+            margin: 0px;
+            border: 0px;
+            padding: 0px;
+            background-image: url(img/cc.jpg);
+            background-position: bottom;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        a {
+            z-index: 99;
+            margin: 0px 0px;
+            color: white;
+            text-align: center;
+            line-height: 134px;
+            font-size: 90px;
+            text-decoration: none;
+            border-radius: 63px;
+            width: 500px;
+            height: 140px;
+            background-color: #FFE53B;
+            background-image: linear-gradient(151deg, #FFE53B 0%, #FF2525 90%);
+            position: absolute;
+            top: 55%;
+            left: 25.5%;
+            display: none;
+            animation-fill-mode: forwards;
+        }
+
+
+        #qi2 {
+            z-index: 8;
+            margin: auto;
+            width: 200px;
+            height: 134px;
+            position: absolute;
+            left: 51.5%;
+            /*top: 83%;*/
+            /* bottom: 1320px; */
+            bottom: 210px;
+            animation-fill-mode: forwards;
+        }
+
+        .move {
+            animation: myfirst 43s linear;
+        }
+
+        .show {
+            display: block !important;
+        }
+
+        #tai2 {
+            width: 600px;
+            height: 1400px;
+            margin: auto;
+            position: absolute;
+            left: 20%;
+            bottom: 100px;
+            z-index: 7
+        }
+
+
+        @keyframes myfirst {
+            16% {
+                left: 51.5%;
+                bottom: 210px;
+            }
+
+            100% {
+                left: 51.5%;
+                bottom: 1320px;
+            }
+        }
+
+        @keyframes mymove {
+
+            /*0%  {left:-1000px;top:1000px;}*/
+            98% {
+                left: -50%;
+                top: 77%;
+            }
+
+            100% {
+                left: 1%;
+                top: 18%;
+            }
+        }
+
+        @keyframes mymove2 {
+
+            /*0%  {left:-1000px;top:1000px;}*/
+            99% {
+                top: 55%;
+                left: -4000px;
+            }
+
+            100% {
+                top: 55%;
+                left: 25.5%;
+            }
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+
+<!--<span>-->
+<!--&lt;!&ndash;<img src="img/cc.jpg" id="bj4" alt="">&ndash;&gt;-->
+<!--&lt;!&ndash;    <<img src="../img/bj3.jpg" id="bj3" alt="">&ndash;&gt;-->
+<!--&lt;!&ndash;    <img src="../img/bj3.jpg" id="bj32" alt="">&ndash;&gt;-->
+<!--&lt;!&ndash;     <img src="../img/bj3.jpg" id="bj33" alt="">&ndash;&gt;-->
+<!--&lt;!&ndash;    <img src="../img/bj5.jpg" id="bj5" alt="">&ndash;&gt;-->
+<!--</span>-->
+
+<a id="anniu" href="/out">升旗结束</a>
+<img src="img/tai.png" alt="" id="tai2">
+<img src="img/qi.png" alt="" id="qi2">
+<audio src="img/国歌.mp3" id="myAudio"></audio>
+
+<script>
+    alert("严肃对待，升旗仪式！");
+    alert("升旗结束时才记入系统数据。");
+    window.setTimeout(function () {
+        var audio = document.getElementById("myAudio");
+        var qi = document.getElementById("qi2")
+        audio.play();
+        qi.className = "move";
+        window.setTimeout(function () {
+            var anniu = document.getElementById("anniu");
+            anniu.className = "show";
+        }, 44000)
+    }, 3000)
+
+</script>
+
+</body>
+
+</html>
